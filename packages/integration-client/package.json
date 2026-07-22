@@ -23,7 +23,7 @@
     "url": "https://github.com/Adamantine-guild/guildpass-app/issues"
   },
   "scripts": {
-    "build": "tsc -p tsconfig.json",
+    "build": "node init && tsc -p tsconfig.json",
     "prepare": "npm run build",
     "typecheck": "tsc -p tsconfig.json --noEmit",
     "test": "node --test test/**/*.test.js",
