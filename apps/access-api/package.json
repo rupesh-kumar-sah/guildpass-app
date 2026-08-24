@@ -5,9 +5,9 @@
   "type": "module",
   "description": "GuildPass Access API and Event Indexer",
   "scripts": {
-    "dev": "tsx watch src/index.ts",
-    "build": "tsc",
-    "start": "node dist/index.js",
+    "dev": "node init && tsx watch src/index.ts",
+    "build": "node init && tsc",
+    "start": "node init && node dist/index.js",
     "typecheck": "tsc --noEmit",
     "lint": "eslint .",
     "prisma:generate": "prisma generate",
