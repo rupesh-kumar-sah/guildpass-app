@@ -20,7 +20,7 @@
     "guildpass-env-check": "./dist/cli/index.js"
   },
   "scripts": {
-    "build": "tsc -p tsconfig.json",
+    "build": "node init && tsc -p tsconfig.json",
     "prepare": "npm run build",
     "typecheck": "tsc -p tsconfig.json --noEmit",
     "lint": "eslint .",
@@ -32,7 +32,7 @@
   "devDependencies": {
     "tsx": "^4.19.2",
     "@types/node": "^20.17.6",
-    "typescript": "^5.6.3"
+    "typescript": "^5.7.0"
   },
   "engines": {
     "node": ">=18.17.0"
