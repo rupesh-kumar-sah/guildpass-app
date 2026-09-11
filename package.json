@@ -5,9 +5,9 @@
   "type": "module",
   "description": "GuildPass web application for communities, memberships, passes and access management.",
   "scripts": {
-    "dev": "next dev",
-    "build": "next build",
-    "start": "next start",
+    "dev": "node init && next dev",
+    "build": "node init && next build",
+    "start": "node init && next start",
     "typecheck": "tsc --noEmit",
     "lint": "eslint .",
     "test": "vitest run",
