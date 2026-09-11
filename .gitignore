@@ -1,8 +1,6 @@
 node_modules
 dist
 .DS_Store
-.env
-.env.local
 .docusaurus
 build
 coverage
@@ -27,3 +25,4 @@ old-package-lock.json
 # Next.js build output
 .next/
 apps/dashboard/.next/
+config.bat
