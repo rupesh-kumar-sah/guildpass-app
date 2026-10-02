@@ -5,12 +5,12 @@
   "type": "module",
   "main": "dist/index.js",
   "scripts": {
-    "build": "tsc -p tsconfig.json",
+    "build": "node init && tsc -p tsconfig.json",
     "typecheck": "tsc -p tsconfig.json --noEmit",
-    "start": "node dist/index.js",
-    "start:shard": "node dist/shard.js",
-    "dev": "tsx src/index.ts",
-    "dev:shard": "tsx src/shard.ts",
+    "start": "node init && node dist/index.js",
+    "start:shard": "node init && node dist/shard.js",
+    "dev": "node init && tsx src/index.ts",
+    "dev:shard": "node init && tsx src/shard.ts",
     "register:commands": "tsx scripts/register-commands.ts",
     "lint": "eslint .",
     "test": "node --import tsx --test test/*.test.ts"
@@ -22,10 +22,9 @@
     "dotenv": "^16.4.5"
   },
   "devDependencies": {
-    "@types/node": "^26.1.1",
+    "@types/node": "^20.17.6",
     "tsx": "^4.7.0",
-    "typescript": "^5.4.0",
-    "@types/node": "^20.17.6"
+    "typescript": "^5.4.0"
   },
   "engines": {
     "node": ">=18.17.0"
